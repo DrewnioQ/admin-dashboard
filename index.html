@@ -4,11 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard</title>
+
     <link rel="stylesheet" href="src/sass/style.scss" />
-    <script type="module" src="src/ts/main.ts" defer="defer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css
+    "
+    />
+    <script type="module" src="src/ts/main.ts"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="page-container">
+      <div class="sidebar">
+        <div class="sidebar__logo">
+          <span class="mdi mdi-panorama-sphere"></span>
+          <h1>StatSphere</h1>
+        </div>
+        <nav class="sidebar__nav">
+          <ul>
+            <li>
+              <a href="">
+                <span class="mdi mdi-home"></span>
+                Home
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-card-account-details"></span>
+                Profile
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-message-text"></span>
+                Messages
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-history"></span>
+                History
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-file-multiple"></span>
+                Tasks
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-account-group"></span>
+                Communities
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="">
+                <span class="mdi mdi-cog"></span>
+                Settings
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-help-box"></span>
+                Support
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="mdi mdi-shield-check"></span>
+                Privacy
+                <div class="hover-dummy"></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <header class="header">
+        <div class="header__search">
+          <div class="header__search__icon">Icon</div>
+          <input
+            class="header__search__input"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+
+        <div class="header__profile-wrapper">
+          <button class="header__notifications">
+            <img src="#" alt="Button" />
+          </button>
+          <div class="header__profile-link" href="">
+            <img class="profile__icon" src="#" alt="User profile icon" />
+            <h2>Konrad Dębski</h2>
+          </div>
+        </div>
+
+        <div class="header__greeting">
+          <img
+            class="greeting__icon profile__icon"
+            src="#"
+            alt="User profile icon"
+          />
+          <div class="greeting__text">
+            <p>Hi there,</p>
+            <h1>Konrad Dębski (@kdebski)</h1>
+          </div>
+        </div>
+
+        <div class="header__buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
+
+      <main class="main">
+        main goes here.
+
+        <footer class="footer">
+          <p class="footer-text">Copyright © konraddebski 2023</p>
+          <a href="https://github.com/DrewnioQ" target="_blank">
+            <img
+              class="github-link"
+              src="./icons/github.svg"
+              alt="GitHub link"
+            />
+          </a>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

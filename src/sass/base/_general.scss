@@ -1,1 +1,29 @@
 @use "../abstracts/" as *;
+
+:root {
+  --bg-blue: #0ea5e9;
+  --bg-blue-hover: #bae6fd;
+
+  --font-light: #f1f5f9;
+  --font-dark: #0f172a;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+
+  min-height: 100svh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
