@@ -19,10 +19,13 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
+    "modern-normalize": "^1.1.0",
     "prettier": "^2.8.7",
     "sass": "^1.62.0",
-    "modern-normalize": "^1.1.0",
     "typescript": "^5.0.4",
     "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96"
   }
 }
