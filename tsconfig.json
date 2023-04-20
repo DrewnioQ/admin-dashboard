@@ -15,5 +15,6 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": [".eslintrc.cjs", "src/**/*"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }

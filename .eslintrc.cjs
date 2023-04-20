@@ -14,9 +14,7 @@ module.exports = {
     project: "tsconfig.json",
     tsconfigRootDir: __dirname,
   },
-  ignorePatterns: ["node_modules", "dist"],
   rules: {
-    // "template-curly-spacing": ["error", "never"],
     "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
   },
 }
