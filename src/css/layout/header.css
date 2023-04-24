@@ -13,7 +13,7 @@
   }
 
   &__search {
-    @apply flex w-full grow items-center justify-center gap-6 lg:justify-normal;
+    @apply flex w-full grow flex-row-reverse items-center justify-center gap-6 lg:flex-row lg:justify-normal;
   }
 
   &__profile-wrapper {
