@@ -7,5 +7,11 @@
 }
 
 .content {
-  @apply min-h-screen md:ml-64;
+  @apply grid min-h-screen grid-cols-1 bg-gray-50 md:ml-64;
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }

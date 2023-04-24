@@ -1,3 +1,82 @@
 .header {
+  @apply grid items-center gap-10 px-10 pb-10 pt-6 text-gray-900;
+
+  grid-template-rows: auto;
   grid-area: header;
+
+  &__top {
+    @apply flex flex-col-reverse items-end justify-around gap-10 lg:flex-row lg:flex-nowrap lg:items-center;
+  }
+
+  &__bottom {
+    @apply flex flex-wrap justify-center gap-x-16 gap-y-10 xl:justify-between;
+  }
+
+  &__search {
+    @apply flex w-full grow items-center justify-center gap-6 lg:justify-normal;
+  }
+
+  &__profile-wrapper {
+    @apply flex shrink-0 gap-6 font-lato text-xl font-bold;
+  }
+
+  &__greet {
+    @apply flex items-center gap-6 font-lato font-bold;
+  }
+
+  &__buttons {
+    @apply flex items-center gap-6;
+  }
+}
+
+.header__search {
+  & svg {
+    @apply h-6 w-6 shrink-0 stroke-gray-900;
+  }
+
+  & input {
+    @apply max-w-xl grow rounded-lg bg-gray-200 px-6 py-2 placeholder:text-gray-500 focus:outline-gray-500;
+  }
+}
+
+.header__profile-wrapper {
+  & svg {
+    @apply h-6 w-6 stroke-gray-900 stroke-2 after:w-6;
+  }
+
+  .profile__notifications {
+    @apply relative;
+  }
+
+  .profile__notifications::after {
+    @apply absolute -right-0.5 top-4 z-10 h-3 w-3 rounded-full bg-blue-700 content-[""];
+  }
+
+  .header__profile-link {
+    @apply flex items-center gap-6;
+
+    & img {
+      @apply h-16 w-16 rounded-full shadow-md;
+    }
+  }
+}
+
+.header__greet {
+  & img {
+    @apply h-24 w-24 rounded-full shadow-md;
+  }
+
+  & span {
+    @apply text-2xl;
+  }
+}
+
+.header__buttons {
+  & button {
+    @apply w-32 space-x-1 rounded-lg bg-blue-700 p-3 font-semibold text-gray-100 shadow-md outline-offset-4 transition hover:bg-blue-500 hover:shadow-lg;
+  }
+
+  & svg {
+    @apply inline-block align-[-0.4rem];
+  }
 }

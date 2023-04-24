@@ -1,4 +1,5 @@
 .main {
+  @apply bg-gray-200;
+
   grid-area: main;
-  background-color: #e5e7eb;
 }
