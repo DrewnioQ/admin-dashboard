@@ -1,5 +1,5 @@
 .header {
-  @apply grid items-center gap-10 px-10 pb-10 pt-6 text-gray-900;
+  @apply z-10 grid items-center gap-10 px-10 pb-10 pt-6 text-gray-900 shadow;
 
   grid-template-rows: auto;
   grid-area: header;
@@ -17,7 +17,7 @@
   }
 
   &__profile-wrapper {
-    @apply flex shrink-0 gap-6 font-lato text-xl font-bold;
+    @apply flex shrink-0 items-center gap-6 font-lato text-xl font-bold;
   }
 
   &__greet {
@@ -30,6 +30,10 @@
 }
 
 .header__search {
+  & button {
+    @apply rounded-lg p-2 transition hover:bg-gray-200;
+  }
+
   & svg {
     @apply h-6 w-6 shrink-0 stroke-gray-900;
   }
@@ -40,6 +44,10 @@
 }
 
 .header__profile-wrapper {
+  & button {
+    @apply rounded-lg p-2 transition hover:bg-gray-200;
+  }
+
   & svg {
     @apply h-6 w-6 stroke-gray-900 stroke-2 after:w-6;
   }
@@ -49,7 +57,7 @@
   }
 
   .profile__notifications::after {
-    @apply absolute -right-0.5 top-4 z-10 h-3 w-3 rounded-full bg-blue-700 content-[""];
+    @apply absolute right-2 top-1.5 z-10 h-3 w-3 rounded-full bg-blue-700 content-[""];
   }
 
   .header__profile-link {
@@ -73,7 +81,7 @@
 
 .header__buttons {
   & button {
-    @apply w-32 space-x-1 rounded-lg bg-blue-700 p-3 font-semibold text-gray-100 shadow-md outline-offset-4 transition hover:bg-blue-500 hover:shadow-lg;
+    @apply w-32 space-x-1 rounded-lg bg-blue-700 p-3 font-semibold text-gray-100 shadow-sm outline-offset-4 transition hover:bg-blue-500 hover:shadow-md;
   }
 
   & svg {
