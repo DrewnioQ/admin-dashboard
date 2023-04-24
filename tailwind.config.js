@@ -7,6 +7,11 @@ export default {
       minHeight: {
         screen: "100svh",
       },
+      fontFamily: {
+        sans: "Inter, sans-serif",
+        lato: "Lato, sans-serif",
+        poppins: "Poppins, sans-serif",
+      },
     },
   },
   plugins: [],

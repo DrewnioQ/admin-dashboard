@@ -1,5 +1,5 @@
 .sidebar {
-  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full bg-gray-50 p-4 transition-transform md:translate-x-0 md:shadow-2xl;
+  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full overflow-y-auto bg-gray-50 p-4 transition-transform md:translate-x-0 md:shadow-2xl;
 
   &__logo {
     @apply mt-5 flex items-center justify-center gap-4;
@@ -10,7 +10,7 @@
   }
 
   &__logo h1 {
-    @apply text-3xl font-semibold text-gray-900;
+    @apply font-poppins text-3xl font-semibold text-gray-900;
   }
 
   &__nav {
