@@ -1,12 +1,12 @@
 .sidebar {
-  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full overflow-y-auto bg-gray-50 p-4 transition-transform md:translate-x-0 md:shadow-2xl;
+  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full overflow-y-auto border-r-2 border-gray-200 bg-gray-50 p-4 transition-transform md:translate-x-0;
 
   &__logo {
     @apply mt-5 flex items-center justify-center gap-4;
   }
 
   &__logo svg {
-    @apply w-12 rounded-full bg-blue-100 text-blue-700;
+    @apply h-12 w-12 rounded-full bg-blue-100 text-blue-700 shadow-md;
   }
 
   &__logo h1 {
@@ -22,14 +22,14 @@
   }
 
   &__nav a {
-    @apply flex items-center gap-5 rounded-lg p-2 text-lg font-medium text-gray-900 hover:bg-gray-200;
+    @apply flex items-center gap-5 rounded-lg p-2 text-lg font-medium text-gray-900 transition hover:bg-gray-200;
 
     & svg {
-      @apply w-7 flex-shrink-0 text-gray-500 transition;
+      @apply h-7 w-7 flex-shrink-0 text-gray-500 transition;
     }
 
     & .notif {
-      @apply ml-auto inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-800;
+      @apply ml-auto inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-700;
     }
   }
 }
