@@ -1,75 +1,35 @@
 .sidebar {
-  --side-gap: 2rem;
-  --section-gap: 4rem;
-
-  --bg-sidebar: var(--bg-blue);
-  --bg-link-hover: var(--bg-blue-hover);
-  --color-link-hover: var(--font-dark);
-  --font-color: var(--font-light);
-  --logo-color: var(--font-dark);
-
-  grid-area: sidebar;
-
-  background-color: var(--bg-sidebar);
-  color: var(--font-color);
-  padding: var(--side-gap) 0;
+  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full bg-gray-50 p-4 transition-transform md:translate-x-0 md:shadow-2xl;
 
   &__logo {
-    @apply flex justify-center items-center gap-4 mb-10 text-white;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
-    padding: 0 var(--side-gap);
-    margin-bottom: var(--section-gap);
-    color: var(--font-color);
-    cursor: default; */
+    @apply mt-5 flex items-center justify-center gap-4;
   }
 
-  &__logo span {
-    color: var(--logo-color);
-    font-size: 3rem;
+  &__logo svg {
+    @apply w-12 rounded-full bg-blue-100 text-blue-700;
   }
 
   &__logo h1 {
-    margin: 0;
+    @apply text-3xl font-semibold text-gray-900;
+  }
+
+  &__nav {
+    @apply divide-y-2;
   }
 
   &__nav ul {
-    padding: 0;
-    margin-bottom: var(--section-gap);
+    @apply space-y-4 py-10;
   }
 
   &__nav a {
-    --transition: 0.1s;
+    @apply flex items-center gap-5 rounded-lg p-2 text-lg font-medium text-gray-900 hover:bg-gray-200;
 
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    & svg {
+      @apply w-7 flex-shrink-0 text-gray-500 transition;
+    }
 
-    font-size: 1.5rem;
-    font-weight: 500;
-
-    padding: 1rem var(--side-gap);
-
-    transition: all var(--transition);
-  }
-
-  &__nav .hover-dummy {
-    flex: 1;
-    transition: flex 0.1s;
-  }
-
-  &__nav a:hover,
-  &__nav a:focus {
-    background-color: var(--bg-link-hover);
-    color: var(--color-link-hover);
-    gap: 0.5rem;
-  }
-
-  &__nav a:hover .hover-dummy,
-  &__nav a:focus .hover-dummy {
-    flex: 0;
+    & .notif {
+      @apply ml-auto inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-800;
+    }
   }
 }

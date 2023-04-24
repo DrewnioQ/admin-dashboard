@@ -14,84 +14,186 @@
     <script type="module" src="src/ts/main.ts"></script>
   </head>
   <body>
-    <div class="page-container">
-      <div class="sidebar">
-        <div class="sidebar__logo">
-          <span class="mdi mdi-panorama-sphere"></span>
-          <h1>StatSphere</h1>
-        </div>
-        <nav class="sidebar__nav">
-          <ul>
-            <li>
-              <a href="">
-                <span class="mdi mdi-home"></span>
-                Home
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-card-account-details"></span>
-                Profile
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-message-text"></span>
-                Messages
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-history"></span>
-                History
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-file-multiple"></span>
-                Tasks
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-account-group"></span>
-                Communities
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-          </ul>
+    <aside class="sidebar">
+      <a href="" class="sidebar__logo">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
+          />
+        </svg>
+        <h1>Sphere</h1>
+      </a>
 
-          <ul>
-            <li>
-              <a href="">
-                <span class="mdi mdi-cog"></span>
-                Settings
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-help-box"></span>
-                Support
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="mdi mdi-shield-check"></span>
-                Privacy
-                <div class="hover-dummy"></div>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="sidebar__nav">
+        <ul>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                />
+                <path
+                  d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                />
+              </svg>
+
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span>Messages</span>
+              <span class="notif">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span>History</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z"
+                />
+              </svg>
+
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z"
+                />
+              </svg>
+              <span>Communities</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Support</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Privacy</span>
+            </a>
+          </li>
+        </ul>
       </div>
+    </aside>
 
+    <div class="content">
       <header class="header">
         <div class="header__search">
           <div class="header__search__icon">Icon</div>
@@ -105,10 +207,10 @@
 
         <div class="header__profile-wrapper">
           <button class="header__notifications">
-            <img src="#" alt="Button" />
+            <img src="" alt="Button" />
           </button>
           <div class="header__profile-link" href="">
-            <img class="profile__icon" src="#" alt="User profile icon" />
+            <img class="profile__icon" src="" alt="User profile icon" />
             <h2>Konrad Dębski</h2>
           </div>
         </div>
@@ -116,7 +218,7 @@
         <div class="header__greeting">
           <img
             class="greeting__icon profile__icon"
-            src="#"
+            src=""
             alt="User profile icon"
           />
           <div class="greeting__text">
@@ -132,20 +234,14 @@
         </div>
       </header>
 
-      <main class="main">
-        main goes here.
+      <main class="main">main goes here.</main>
 
-        <footer class="footer">
-          <p class="footer-text">Copyright © konraddebski 2023</p>
-          <a href="https://github.com/DrewnioQ" target="_blank">
-            <img
-              class="github-link"
-              src="./icons/github.svg"
-              alt="GitHub link"
-            />
-          </a>
-        </footer>
-      </main>
+      <footer class="footer">
+        <p class="footer-text">Copyright © konraddebski 2023</p>
+        <a href="https://github.com/DrewnioQ" target="_blank">
+          <img class="github-link" src="./icons/github.svg" alt="GitHub link" />
+        </a>
+      </footer>
     </div>
   </body>
 </html>

@@ -6,21 +6,6 @@
   --font-dark: #0f172a;
 }
 
-.page-container {
-  @apply grid min-h-screen;
-
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main";
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+.content {
+  @apply min-h-screen md:ml-64;
 }
