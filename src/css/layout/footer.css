@@ -1,5 +1,5 @@
 .footer {
-  @apply z-10 flex flex-col flex-wrap items-center justify-center gap-3 px-10 py-4 shadow-t sm:flex-row sm:items-center sm:justify-between sm:py-6;
+  @apply z-10 flex flex-col flex-wrap items-center justify-center gap-3 px-10 py-4 shadow-t sm:flex-row sm:items-center sm:justify-between;
 
   grid-area: footer;
 
