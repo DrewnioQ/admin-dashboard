@@ -14,4 +14,24 @@
     "header"
     "main"
     "footer";
+
+  & .dark-fg {
+    @apply invisible absolute left-0 top-0 z-20 h-full w-full bg-gray-900/80 transition;
+
+    &.open {
+      @apply visible;
+
+      & .close-btn {
+        @apply visible;
+      }
+    }
+
+    & .close-btn {
+      @apply absolute right-9 top-8 h-12 w-12 rounded-lg bg-gray-50 p-2 text-gray-900 shadow-md transition hover:bg-gray-200 hover:shadow-lg;
+
+      & svg {
+        @apply stroke-2;
+      }
+    }
+  }
 }
