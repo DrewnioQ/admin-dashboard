@@ -4,6 +4,9 @@ export default {
   content: ["./*.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "4xl": "2000px",
+      },
       minHeight: {
         screen: "100svh",
       },
