@@ -1,0 +1,106 @@
+.header {
+  @apply z-10 grid items-center gap-6 px-10 pb-10 pt-4 text-gray-900 shadow xl:gap-0 xl:pb-4;
+
+  grid-template-rows: auto;
+  grid-area: header;
+
+  &__top {
+    @apply flex flex-col-reverse items-end justify-around gap-6 lg:flex-row lg:flex-nowrap lg:items-center lg:gap-0;
+  }
+
+  &__bottom {
+    @apply flex flex-wrap justify-center gap-x-16 gap-y-10 xl:justify-between;
+  }
+
+  &__search {
+    @apply flex w-full grow flex-row-reverse items-center justify-center gap-6 lg:flex-row lg:justify-normal;
+  }
+
+  &__top__container {
+    @apply flex w-full items-center justify-between;
+  }
+
+  &__profile-wrapper {
+    @apply flex shrink-0 items-center gap-2 font-lato text-xl font-bold;
+  }
+
+  &__greet {
+    @apply flex items-center gap-6 font-lato font-bold;
+  }
+
+  &__buttons {
+    @apply flex items-center gap-6;
+  }
+}
+
+.header__search {
+  & button {
+    @apply rounded-lg p-2 transition hover:bg-gray-200;
+  }
+
+  & svg {
+    @apply h-6 w-6 shrink-0 stroke-gray-900;
+  }
+
+  & input {
+    @apply max-w-lg grow rounded-lg bg-gray-200 px-6 py-2 placeholder:text-gray-500 focus:outline-gray-500;
+  }
+}
+
+.hamburger-menu {
+  @apply flex h-14 w-14 flex-col rounded-lg p-4 transition hover:bg-gray-200 md:invisible;
+
+  & div {
+    @apply flex w-full grow flex-col justify-between;
+
+    & span {
+      @apply h-1 rounded-lg bg-gray-900;
+    }
+  }
+}
+
+.header__profile-wrapper {
+  & button {
+    @apply rounded-lg p-2 transition hover:bg-gray-200;
+  }
+
+  & svg {
+    @apply h-6 w-6 stroke-gray-900 stroke-2 after:w-6;
+  }
+
+  .profile__notifications {
+    @apply relative;
+  }
+
+  .profile__notifications::after {
+    @apply absolute right-2 top-1.5 z-10 h-3 w-3 rounded-full bg-blue-700 content-[""];
+  }
+
+  .header__profile-link {
+    @apply flex cursor-pointer items-center gap-6 rounded-lg py-2 pl-2 pr-4 transition hover:bg-gray-200;
+
+    & img {
+      @apply h-16 w-16 rounded-full shadow-md;
+    }
+  }
+}
+
+.header__greet {
+  & img {
+    @apply h-24 w-24 rounded-full shadow-md;
+  }
+
+  & span {
+    @apply text-2xl;
+  }
+}
+
+.header__buttons {
+  & button {
+    @apply w-32 space-x-1 rounded-lg bg-blue-700 p-3 font-semibold text-gray-100 shadow-sm outline-offset-4 transition hover:bg-blue-500 hover:shadow-md;
+  }
+
+  & svg {
+    @apply inline-block h-6 w-6 stroke-2 align-[-0.4rem];
+  }
+}

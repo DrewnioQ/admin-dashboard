@@ -1,23 +1,16 @@
-import typescriptLogo from "../assets/img/typescript.svg"
-import viteLogo from "../assets/img/vite.svg"
-import setupCounter from "./counter"
+const hamburger: HTMLDivElement | null = document.querySelector("#hamburger")
+const sidebar: HTMLDivElement | null = document.querySelector("#sidebar")
+const darkFg: HTMLDivElement | null = document.querySelector("#darkFg")
+const closeBtn: HTMLDivElement | null = document.querySelector("#closeBtn")
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src=${viteLogo} class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src=${typescriptLogo} class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+if (hamburger && sidebar && darkFg && closeBtn) {
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("open")
+    darkFg.classList.toggle("open")
+  })
 
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!)
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("open")
+    darkFg.classList.toggle("open")
+  })
+}

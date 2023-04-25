@@ -1,0 +1,39 @@
+.sidebar {
+  @apply fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full overflow-y-auto border-r-2 border-gray-200 bg-gray-50 p-4 transition-transform md:translate-x-0;
+
+  &__logo {
+    @apply mt-5 flex items-center justify-center gap-4;
+  }
+
+  &__logo svg {
+    @apply h-12 w-12 rounded-full bg-blue-100 text-blue-700 shadow-md;
+  }
+
+  &__logo h1 {
+    @apply font-poppins text-3xl font-semibold text-gray-900;
+  }
+
+  &__nav {
+    @apply divide-y-2;
+  }
+
+  &__nav ul {
+    @apply space-y-4 py-10;
+  }
+
+  &__nav a {
+    @apply flex items-center gap-5 rounded-lg p-2 text-lg font-medium text-gray-900 transition hover:bg-gray-200;
+
+    & svg {
+      @apply h-7 w-7 flex-shrink-0 text-gray-500 transition;
+    }
+
+    & .notif {
+      @apply ml-auto inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-700;
+    }
+  }
+
+  &.open {
+    @apply translate-x-0;
+  }
+}
