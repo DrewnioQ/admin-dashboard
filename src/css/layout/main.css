@@ -61,7 +61,7 @@
     @apply max-w-md space-y-4;
 
     & .container {
-      @apply divide-y-2 rounded-lg bg-gray-50 px-10 py-6 shadow-md;
+      @apply divide-y-2 rounded-lg bg-gray-50 px-8 py-4 shadow-md;
 
       & span {
         @apply text-lg;
@@ -85,7 +85,7 @@
     }
 
     & .user {
-      @apply flex items-center rounded-lg px-4 py-2 transition hover:bg-gray-200;
+      @apply flex items-center rounded-lg py-2 pl-2 pr-4 transition hover:bg-gray-200;
 
       & svg {
         @apply ml-auto h-6 w-6 text-gray-900;
